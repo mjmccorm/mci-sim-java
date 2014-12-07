@@ -33,35 +33,35 @@ public class Vitals{
 	}
 	
 	//Systolic Blood Pressure
-	private int getSystolicBP(){
+	public int getSystolicBP(){
 		return this.systolic_bp;
 	}
-	private void increaseSystolicBP(int delta){
+	public void increaseSystolicBP(int delta){
 		this.systolic_bp += delta;
 	}
-	private void decreaseSystolicBP(int delta){
+	public void decreaseSystolicBP(int delta){
 		this.systolic_bp -= delta;
 	}
 	
 	//Diastolic Blood Pressure
-	private int getDiastolicBP(){
+	public int getDiastolicBP(){
 		return this.diastolic_bp;
 	}
-	private void increaseDiastolicBP(int delta){
+	public void increaseDiastolicBP(int delta){
 		this.diastolic_bp += delta;
 	}
-	private void decreaseDiastolicBP(int delta){
+	public void decreaseDiastolicBP(int delta){
 		this.diastolic_bp += delta;
 	}
 	
 	//Heart Rate
-	private int getHeartRate(){
+	public int getHeartRate(){
 		return this.heart_rate;
 	}
-	private void increaseHeartRate(int delta){
+	public void increaseHeartRate(int delta){
 		this.heart_rate += delta;
 	}
-	private void decreaseHeartRate(int delta){
+	public void decreaseHeartRate(int delta){
 		this.heart_rate -= delta;
 	}
 	

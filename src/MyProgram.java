@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.logging.*;
 import java.io.IOException;
+import java.util.Random;
 
 public class MyProgram{
 	
@@ -29,7 +30,13 @@ public class MyProgram{
 		
 		Person matt = new Person();
 		System.out.println(matt.getID() + ":" + matt.getGender() + ":" + matt.getRace() + ":" + matt.getBirthdate() + ":" + matt.getAge());
+		System.out.printf("%-15s %-15s %n", new Object[] {matt.getRace(), matt.getGender()} );
 		people.add(matt);
+		int min = 0;
+		int max = 240;
+		Random rand = new Random();
+		int fake_bp = rand.nextInt((max - min) + 1) +min; 
+		logger.log(Level.INFO, "Random BP: " + fake_bp);
 		
 		Person p2 = new Person(10, 25, "Female", "Mexican");
 		System.out.println(p2.getID() + ":" + p2.getGender() + ":" + p2.getRace() + ":" + p2.getBirthdate() + ":" + p2.getAge() );
